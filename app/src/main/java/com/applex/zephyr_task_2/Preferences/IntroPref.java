@@ -8,7 +8,7 @@ public class IntroPref {
 
     private SharedPreferences preferences;
     private final SharedPreferences.Editor editor;
-    private static final String PREF_NAME = "com.applex.miskaa";
+    private static final String PREF_NAME = "com.applex.zephyr_task_2";
     private static final String ORDER_BY = "order_by";
 
     @SuppressLint("CommitPrefEdits")
