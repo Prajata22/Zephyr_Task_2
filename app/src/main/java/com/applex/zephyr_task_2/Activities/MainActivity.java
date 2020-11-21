@@ -31,6 +31,8 @@ import com.applex.zephyr_task_2.Utilities.RetrofitHelper;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Objects;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -112,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 shimmerFrameLayout.setVisibility(View.GONE);
                 error.setVisibility(View.GONE);
                 order.setSelection(introPref.getSortOrder());
-                booksModelArrayList.addAll(response.body().getData());
+                booksModelArrayList.addAll(Objects.requireNonNull(response.body()).getData());
                 sortingList(booksModelArrayList, order.getSelectedItem().toString());
             }
 
