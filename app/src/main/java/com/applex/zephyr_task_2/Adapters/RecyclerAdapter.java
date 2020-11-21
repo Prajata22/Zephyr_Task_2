@@ -64,7 +64,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter <RecyclerAdapter.Progr
 
     public static class ProgrammingViewHolder extends RecyclerView.ViewHolder {
 
-        private final TextView name;
+        TextView name;
 
         private ProgrammingViewHolder(@NonNull View view) {
             super(view);
